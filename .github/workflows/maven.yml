@@ -30,3 +30,6 @@ jobs:
         cache: maven
     - name: Build
       run: mvn clean install --file pom.xml
+    - name: Test
+      run: mvn clean test --file pom.xml
+
