@@ -23,4 +23,9 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Test
       run: mvn clean test --file pom.xml
-  
+    - name: Generate and Upload Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: devProjectArtifact
+        path: target/*.war  # Specify the pattern for files to upload
+
