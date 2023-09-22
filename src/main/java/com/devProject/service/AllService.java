@@ -1,4 +1,4 @@
-package com.prodProject.service;
+package com.devProject.service;
 
 public class AllService {
 	

@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 
-import com.prodProject.service.AllService; 
+import com.devProject.service.AllService; 
 
 public class OperationControllerTest {
 	AllService addctrl=new AllService();
