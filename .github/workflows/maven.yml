@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: mvn -B package --file pom.xml
     - name: Test
-      run: mvn clean test --file pom.xml
+      run: mvn clean test -X --file pom.xml
     - name: Generate and Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
