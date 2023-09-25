@@ -20,9 +20,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build
-      run: mvn clean install verify --file pom.xml
+      run: mvn clean install verify
     - name: Test
-      run: mvn test --file pom.xml
+      run: mvn test
     - name: Generate and Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
